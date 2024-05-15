@@ -1,6 +1,4 @@
-const flatten = (arr, depth = 1) =>
-  arr.reduce(
-    (a, v) =>
-      a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v),
-    [],
-  );
+const factorial = (num) => {
+  if (num === 0) return 1;
+  return num * factorial(num - 1);
+};
